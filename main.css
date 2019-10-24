@@ -1,0 +1,480 @@
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+
+  line-height: 1.4;
+  justify-content: center;
+  background-image: url("https://res.cloudinary.com/dltth25yd/image/upload/v1480829662/restaurant_icons_agmymv.png");
+}
+
+/*Nutrition Analysis h1 header*/
+.top {
+  font-size: 60px !important;
+  margin-bottom: 10px;
+  color: #4c5b82;
+  font-family: "Amatic SC", cursive;
+}
+p {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-form {
+  text-align: center;
+  padding: 10px;
+}
+
+/*Input Field*/
+.input-field {
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #d3d3d3;
+  box-shadow: none;
+  color: #111;
+}
+
+.input-field :hover {
+  border-color: #4c5b82;
+}
+/*Button Animation*/
+button {
+  width: 123px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: inline-block;
+  background: #ecf0f1;
+  border-top: 1px solid #fff;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  margin-top: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  background: #f1c40f;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  text-shadow: 0 -1px 0 #2c3e50;
+}
+.hidden {
+  display: none;
+}
+
+/*Results div*/
+.js-results {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Nutrition table*/
+.nfp-nutrition-facts {
+  background-color: #fff;
+  border: 1px solid #000;
+  display: block;
+  max-width: 320px;
+  padding: 0.625rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nutrition-facts-table {
+  border-collapse: collapse;
+  font-family: inherit;
+  table-layout: fixed;
+}
+.nfp-nutrition-facts th {
+  font-weight: 700;
+  text-align: left;
+}
+.nfp-nutrition-facts .table-title {
+  border-bottom: 2px solid #000;
+  font-size: 2.375rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: left;
+}
+.nfp-nutrition-facts.single-label.pre-2019 thead,
+.nfp-nutrition-facts .thick-bottom-border {
+  border-bottom: 10px solid #000;
+}
+.nfp-nutrition-facts tbody tr {
+  border-bottom: 1px solid #000;
+  display: block;
+  padding: 0.3125rem 0;
+}
+.nfp-nutrition-facts tbody tr:last-child {
+  border-bottom-width: 6px;
+}
+.nfp-nutrition-facts tbody tr.no-border {
+  border-bottom: none;
+}
+.nfp-nutrition-facts tbody tr.right-aligned {
+  text-align: right;
+}
+.nfp-nutrition-facts tbody td,
+.nfp-nutrition-facts tbody th {
+  display: inline-block;
+}
+.nfp-nutrition-facts .sub-row {
+  padding-left: 0.625rem;
+  position: relative;
+}
+.nfp-nutrition-facts .sub-row.no-bottom-border {
+  border-bottom: none;
+}
+.nfp-nutrition-facts .sub-row th {
+  font-weight: 500;
+}
+.nfp-nutrition-facts .nutrient-row th {
+  font-weight: 300;
+}
+.nfp-nutrition-facts .sub-sub-row {
+  border-bottom: none;
+  border-top: 1px solid #000;
+  left: 20px;
+  position: relative;
+  width: calc(100% - 20px);
+}
+.nfp-nutrition-facts .sub-sub-row + tr {
+  border-top: 1px solid #000;
+}
+.nfp-nutrition-facts .sub-sub-row th {
+  font-weight: 500;
+}
+.nfp-nutrition-facts .push-right {
+  position: relative;
+}
+.nfp-nutrition-facts .push-right th {
+  position: absolute;
+  right: 0;
+}
+.nfp-nutrition-facts .calories {
+  border-bottom-width: 5px;
+  font-weight: 800;
+  max-height: 37px;
+}
+.nfp-nutrition-facts .calories td,
+.nfp-nutrition-facts .calories th {
+  line-height: 1.2;
+  position: relative;
+}
+.nfp-nutrition-facts .calories th {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.nfp-nutrition-facts .calories td {
+  font-size: 3.125rem;
+  top: -6px;
+}
+.nfp-nutrition-facts tfoot td {
+  font-size: 12px;
+  padding: 0.625rem 0 0;
+}
+.nfp-nutrition-facts .sugars + .protein {
+  border-top: 1px solid #000;
+}
+.nfp-nutrition-facts .screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.nfp-nutrition-facts.single-label tbody td:not(.left-aligned):last-child {
+  float: right;
+  text-align: right;
+}
+.nfp-nutrition-facts.single-label tbody td {
+  margin-left: 5px;
+}
+.nfp-nutrition-facts.single-label.pre-2019 .table-title {
+  border-bottom: none;
+}
+.nfp-nutrition-facts.single-label.pre-2019 .serving-size {
+  display: -ms-flexbox;
+  display: flex;
+}
+.nfp-nutrition-facts.single-label.pre-2019 .serving-size th {
+  font-weight: 500;
+  margin-right: 5px;
+}
+.nfp-nutrition-facts.single-label.pre-2019 .servings {
+  border-bottom: 1px solid #000;
+}
+.nfp-nutrition-facts.single-label.pre-2019 .calories {
+  font-weight: 500;
+}
+.nfp-nutrition-facts.single-label.pre-2019 .calories th {
+  font-weight: 700;
+}
+.nfp-nutrition-facts.single-label.pre-2019 .calories td,
+.nfp-nutrition-facts.single-label.pre-2019 .calories th {
+  font-size: inherit;
+  top: 0;
+}
+.nfp-nutrition-facts.single-label.pre-2019 tbody tr {
+  display: table-row;
+}
+.nfp-nutrition-facts.single-label.pre-2019 tbody tr td,
+.nfp-nutrition-facts.single-label.pre-2019 tbody tr th {
+  padding: 2px 0 3px;
+}
+.nfp-nutrition-facts.single-label.pre-2019 tbody .dv-row th {
+  display: table-cell;
+  text-align: right;
+}
+.nfp-nutrition-facts.single-label.pre-2019 tbody .sub-row th {
+  margin-left: 10px;
+}
+.nfp-nutrition-facts.dual-label {
+  max-width: 490px;
+  overflow: auto;
+}
+.nfp-nutrition-facts.dual-label .nutrition-facts-table {
+  display: block;
+  table-layout: auto;
+  padding-right: 7px;
+  width: 450px;
+}
+.nfp-nutrition-facts.dual-label tbody tr {
+  clear: left;
+  text-align: right;
+}
+.nfp-nutrition-facts.dual-label tbody tr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.nfp-nutrition-facts.dual-label tbody th {
+  float: left;
+}
+.nfp-nutrition-facts.dual-label tbody td {
+  width: 90px;
+}
+.nfp-nutrition-facts.dual-label tbody td:nth-child(2),
+.nfp-nutrition-facts.dual-label tbody td:nth-child(4) {
+  position: relative;
+  padding-left: 14px;
+  text-align: left;
+}
+.nfp-nutrition-facts.dual-label tbody td:nth-child(2):before,
+.nfp-nutrition-facts.dual-label tbody td:nth-child(4):before {
+  border-left: 1px solid #000;
+  content: "";
+  height: calc(100% + 20px);
+  left: 0;
+  margin-left: 5px;
+  min-height: 33px;
+  position: absolute;
+  top: -15px;
+}
+.nfp-nutrition-facts.dual-label tbody td:last-child,
+.nfp-nutrition-facts.dual-label tbody td:nth-child(3) {
+  font-weight: 700;
+  width: 44px;
+}
+.nfp-nutrition-facts.dual-label tbody .serving-size td:before {
+  border-left: none;
+}
+.nfp-nutrition-facts.dual-label tbody .serving-size td:last-child {
+  width: auto;
+}
+.nfp-nutrition-facts.dual-label tbody .calories td:nth-child(2),
+.nfp-nutrition-facts.dual-label tbody .servings td:nth-child(2) {
+  text-align: right;
+}
+.nfp-nutrition-facts.dual-label tbody .calories td:last-child,
+.nfp-nutrition-facts.dual-label tbody .servings td:last-child {
+  position: relative;
+}
+.nfp-nutrition-facts.dual-label tbody .calories td:last-child:before,
+.nfp-nutrition-facts.dual-label tbody .servings td:last-child:before {
+  border-left: 1px solid #000;
+  content: "";
+  height: calc(100% + 20px);
+  left: 0;
+  margin-left: 5px;
+  min-height: 33px;
+  position: absolute;
+  top: -15px;
+}
+.nfp-nutrition-facts.dual-label tbody .dv-row th {
+  position: relative;
+  float: none;
+  text-align: right;
+}
+.nfp-nutrition-facts.dual-label tbody .dv-row th:before {
+  border-left: 1px solid #000;
+  content: "";
+  height: calc(100% + 20px);
+  left: 0;
+  margin-left: 5px;
+  min-height: 33px;
+  position: absolute;
+  top: -15px;
+}
+.nfp-nutrition-facts.dual-label tbody .folate + tr td {
+  position: relative;
+  font-weight: 500;
+  padding-left: 14px;
+  text-align: left;
+}
+.nfp-nutrition-facts.dual-label tbody .folate + tr td:before {
+  border-left: 1px solid #000;
+  content: "";
+  height: calc(100% + 20px);
+  left: 0;
+  margin-left: 5px;
+  min-height: 33px;
+  position: absolute;
+  top: -15px;
+}
+.nfp-nutrition-facts.dual-label tbody .calories td,
+.nfp-nutrition-facts.dual-label tbody .dv-row th,
+.nfp-nutrition-facts.dual-label tbody .folate + tr td,
+.nfp-nutrition-facts.dual-label tbody .servings td {
+  width: 137px;
+}
+.nfp-nutrition-facts.dual-label.pre-2019 .calories-from-fat {
+  border-bottom-width: 5px;
+}
+.nfp-nutrition-facts.dual-label.pre-2019 .calories-from-fat td {
+  position: relative;
+  min-width: 130px;
+  text-align: right;
+}
+.nfp-nutrition-facts.dual-label.pre-2019 .calories-from-fat td:before {
+  border-left: 1px solid #000;
+  content: "";
+  height: calc(100% + 20px);
+  left: 0;
+  margin-left: 5px;
+  min-height: 33px;
+  position: absolute;
+  top: -15px;
+}
+.nfp-nutrition-facts.dual-label.pre-2019 .calories {
+  border-bottom-width: 1px;
+  font-weight: 500;
+}
+.nfp-nutrition-facts.dual-label.pre-2019 .calories th {
+  font-weight: 700;
+}
+.nfp-nutrition-facts.dual-label.pre-2019 .calories td,
+.nfp-nutrition-facts.dual-label.pre-2019 .calories th {
+  font-size: inherit;
+  top: 0;
+}
+.nfp-admin-preview .nfp-nutrition-facts.single-label .calories {
+  max-height: 43px;
+}
+.nfp-admin-preview .nfp-nutrition-facts.single-label .calories td:last-child {
+  top: -7px;
+}
+.nfp-admin-preview {
+  overflow: auto;
+}
+.nfp-admin-preview .nfp-nutrition-facts.dual-label {
+  max-width: 500px;
+  overflow: visible;
+}
+.nfp-admin-preview .nfp-nutrition-facts.dual-label nutrition-facts-table {
+  width: 460px;
+}
+.nfp-admin-preview .nfp-nutrition-facts.dual-label .calories th {
+  font-size: 30px;
+}
+.nfp-admin-preview .nfp-nutrition-facts.dual-label .calories td {
+  font-size: 40px;
+  font-weight: 800;
+  min-width: 134px;
+  padding-left: 0;
+  width: 134px;
+}
+.nfp-admin-preview .nfp-nutrition-facts.dual-label .servings td {
+  min-width: 134px;
+  padding-left: 0;
+  width: 134px;
+}
+.nfp-admin-preview .nfp-nutrition-facts.dual-label .servings td:first-child {
+  min-width: 0;
+  width: auto;
+}
+.nfp-admin-preview .nfp-nutrition-facts.dual-label tbody .dv-row th {
+  min-width: 133px;
+  width: 133px;
+}
+.nfp-admin-preview .nfp-nutrition-facts.dual-label tbody td {
+  width: 57px;
+}
+.nfp-admin-preview
+  .nfp-nutrition-facts.pre-2019.single-label
+  .calories
+  td:last-child {
+  top: 0;
+}
+.nfp-admin-preview
+  .nfp-nutrition-facts.pre-2019.dual-label
+  .calories-from-fat
+  td {
+  font-weight: 600;
+  min-width: 120px;
+}
+.nfp-admin-preview
+  .nfp-nutrition-facts.pre-2019.dual-label
+  .calories-from-fat
+  td:last-child {
+  min-width: 133px;
+}
+@media (min-width: 490px) {
+  .nfp-nutrition-facts.dual-label nutrition-facts-table {
+    display: table;
+    padding-right: 0;
+    table-layout: fixed;
+    width: auto;
+  }
+  .nfp-admin-preview .nfp-nutrition-facts.dual-label .nutrition-facts-table {
+    display: block;
+    padding-right: 7px;
+    table-layout: auto;
+    width: 500px;
+  }
+}
+@media (min-width: 520px) {
+  .nfp-admin-preview .nfp-nutrition-facts.dual-label .nutrition-facts-table {
+    display: table;
+    padding-right: 0;
+    table-layout: fixed;
+    width: auto;
+  }
+}
